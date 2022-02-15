@@ -1,0 +1,120 @@
+:root{
+    --primary:hsla(231, 51%, 10%, 0.68);
+    --secondary:hsla(23, 100%, 50%, 0.73);
+}
+
+.navbar-color{
+    background: #0d1128;
+}
+
+.navbar-color li a{
+    text-decoration: none;  
+    color: white;
+}
+
+.social-icon-navbar{
+    list-style: none;
+}
+/* fd5f00 */
+.top-navbar a{
+    color: black;
+}
+.showcase
+{
+  position: relative;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.showcase video
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+.overlay
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: linear-gradient(45deg, #0d1128 0%, #fd6100 100%); */
+  mix-blend-mode: overlay;
+}
+.text
+{
+  position: relative;
+  z-index: 10;
+}
+
+.text a
+{
+  display: inline-block;
+  font-size: 1em;
+  background: #fff;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #111;
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+.text a:hover
+{
+  letter-spacing: 6px;
+}
+
+@media (max-width: 991px)
+{
+  .showcase,
+  .showcase header
+  {
+    padding: 40px;
+  }
+  .text h2
+  {
+    font-size: 3em;
+  }
+  .text h3
+  {
+    font-size: 2em;
+  }
+}
+
+
+.gradient-bg-association{
+    background: linear-gradient(135deg, var(--primary), var(--secondary))
+        , url('/static/images/bg-1.jpg') no-repeat fixed center/cover;
+    color: white;
+    height: 100%;
+}
+
+.footer ul{
+    text-decoration: none;
+    list-style: none;
+}
+
+.footer ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer{
+    background-color: #0d1128;
+    color: white;
+}
