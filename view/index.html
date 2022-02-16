@@ -23,13 +23,13 @@
 
     <!-- -----------------Before Login --------------- -->
     <div class="fixed-top bg-light top-navbar">
-        <ul class="nav justify-content-between align-items-center px-2 mx-0">
+        <ul class="nav justify-content-between align-items-center px-2 py-4 mx-0">
             <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="./index.html"><img src="../static/images/logo.jpg"
                         width="200" alt=""></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" >Click Here to Register</a>
+                <a class="nav-link" href="#">Click Here to Register</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Forgot User Info?</a>
@@ -40,13 +40,17 @@
             </li>
             <li class="nav-item">
                 <ul class="d-flex justify-content-between align-items-center social-icon-navbar">
-                    <li class="mx-2"><a style="font-size:25px;" href="https://www.facebook.com/KidVisionPreK/"
-                            class="fa fa-facebook"></a></li>
-                    <li class="mx-2"><a style="font-size:25px;" href="https://www.instagram.com/kidvisionprek/"
-                            class="fa fa-instagram"></a></li>
-                    <li class="mx-2"><a style="font-size:25px;"
+                    <li class="mx-2"><a style="font-size:25px;" target="_blank"
+                            href="https://www.facebook.com/KidVisionPreK/" class="fa fa-facebook"></a></li>
+                    <li class="mx-2"><a style="font-size:25px;" target="_blank"
+                            href="https://www.instagram.com/kidvisionprek/" class="fa fa-instagram"></a></li>
+                    <li class="mx-2"><a style="font-size:25px;" target="_blank"
                             href="https://www.youtube.com/playlist?list=PLr4S3PqZjXgllhIw77QEjqdAsaAQ6x_gL"
                             class="fa fa-youtube-play"></a></li>
+                    <li class="mx-2"><a style="font-size:25px;" target="_blank" href="https://twitter.com/KidVisionPreK"
+                            class="fa fa-twitter"></a></li>
+                    <li class="mx-2"><a style="font-size:25px;" target="_blank"
+                            href="https://www.pinterest.com/kidvisionprek" class="fa fa-pinterest"></a></li>
                 </ul>
             </li>
         </ul>
@@ -75,9 +79,19 @@
                 </li>
                 <li class="nav-item">
                     <ul class="d-flex justify-content-between align-items-center social-icon-navbar">
-                    <li class="mx-2"><a style="font-size:25px;" href="https://www.facebook.com/KidVisionPreK/" class="fa fa-facebook"></a></li>
-                    <li class="mx-2"><a style="font-size:25px;" href="https://www.instagram.com/kidvisionprek/" class="fa fa-instagram"></a></li>
-                    <li class="mx-2"><a style="font-size:25px;" href="https://www.youtube.com/playlist?list=PLr4S3PqZjXgllhIw77QEjqdAsaAQ6x_gL" class="fa fa-youtube-play"></a></li>
+                    <li class="mx-2"><a style="font-size:25px;" target="_blank" href="https://www.facebook.com/KidVisionPreK/"
+                                    class="fa fa-facebook"></a></li>
+                            <li class="mx-2"><a style="font-size:25px;" target="_blank" href="https://www.instagram.com/kidvisionprek/"
+                                    class="fa fa-instagram"></a></li>
+                            <li class="mx-2"><a style="font-size:25px;" target="_blank"
+                                    href="https://www.youtube.com/playlist?list=PLr4S3PqZjXgllhIw77QEjqdAsaAQ6x_gL"
+                                    class="fa fa-youtube-play"></a></li>
+                            <li class="mx-2"><a style="font-size:25px;" target="_blank"
+                                    href="https://twitter.com/KidVisionPreK"
+                                    class="fa fa-twitter"></a></li>
+                            <li class="mx-2"><a style="font-size:25px;" target="_blank"
+                                    href="https://www.pinterest.com/kidvisionprek"
+                                    class="fa fa-pinterest"></a></li>
                 </ul>
                 </li>
             </ul> -->
@@ -144,7 +158,8 @@
         <!-- ---------------------- -->
 
         <!-- Modal login -->
-        <div class="modal fade modal-vertical" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal fade modal-vertical" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel"
+            aria-hidden="true">
             <div class="modal-dialog ">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -154,13 +169,15 @@
                     <div class="modal-body">
                         <div class="mb-3">
                             <!-- <label for="exampleFormControlInput1" class="form-label">Username</label> -->
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Username">
-                          </div>
-                          <div class="mb-3">
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="Enter Username">
+                        </div>
+                        <div class="mb-3">
                             <!-- <label for="exampleFormControlInput1" class="form-label">Password</label> -->
-                            <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Enter Password">
-                          </div>
-                          <button type="button" class="btn btn-primary">Login</button>
+                            <input type="password" class="form-control" id="exampleFormControlInput1"
+                                placeholder="Enter Password">
+                        </div>
+                        <button type="button" class="btn btn-primary">Login</button>
                     </div>
                 </div>
             </div>
@@ -245,7 +262,7 @@
     <!-- -------------------------------- -->
 
     <!-- --------About Kidvision Prek----------- -->
-    <div class="container my-5 py-5">
+    <div class="container my-2 py-2">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-12 d-flex justify-content-center align-items-start flex-column">
                 <h1>About Kidvision Prek</h1>
@@ -271,7 +288,7 @@
 
 
     <!-- --------Teachers Association----------- -->
-    <div class="container-fluid my-5 gradient-bg-association align-items-center justify-content-center d-flex py-5">
+    <div class="container-fluid my-2 gradient-bg-association align-items-center justify-content-center d-flex py-2">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-12 py-5 px-5">
@@ -306,9 +323,10 @@
 
 
     <!-- --------What's New on Kidvission-------- -->
-    <section class="my-5 py-5">
+    <section class="my-2 py-2">
         <h1 class="text-center my-3">What's New on Kidvission</h1>
-        <p style="width: 75%;" class="text-center mx-auto px-5 my-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium optio
+        <p style="width: 75%;" class="text-center mx-auto px-5 my-5">Lorem ipsum dolor, sit amet consectetur adipisicing
+            elit. Praesentium optio
             provident Lorem ipsum
             dolor, sit amet consectetur adipisicing elit. Praesentium optio provident vitae, voluptates
             perferendis adipisci quidem quasi atque dolore deleniti eum minus doloremque totam, explicabo dolor
@@ -321,7 +339,7 @@
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                     <div class="card-body">
-                        <h2 class="card-title">Card title</h2>
+                        <h2 class="card-title">Fieldtrip Video</h2>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk
                             of
                             the card's content.</p>
@@ -333,7 +351,7 @@
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                     <div class="card-body">
-                        <h2 class="card-title">Card title</h2>
+                        <h2 class="card-title">Mission Video</h2>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk
                             of
                             the card's content.</p>
@@ -345,7 +363,7 @@
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                     <div class="card-body">
-                        <h2 class="card-title">Card title</h2>
+                        <h2 class="card-title">360 Video</h2>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk
                             of
                             the card's content.</p>
@@ -357,7 +375,7 @@
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                     <div class="card-body">
-                        <h2 class="card-title">Card title</h2>
+                        <h2 class="card-title">Kidvission App</h2>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk
                             of
                             the card's content.</p>
@@ -373,7 +391,7 @@
     <!-- --------Contact Us------------- -->
     <div className='margin'></div>
     <section style="height: 60vh;"
-        class="my-5 container-fluid my-5 gradient-bg-association align-items-center justify-content-center d-flex py-5">
+        class="container-fluid my-4 gradient-bg-association align-items-center justify-content-center d-flex py-5">
         <div>
             <h1 class="text-center">Contact Us</h1>
             <div class="container my-5">
@@ -395,11 +413,10 @@
             </div>
         </div>
     </section>
-    <div className='margin'></div>
     <!-- ---------------------------------- -->
 
     <!-- ------Footer----------- -->
-    <footer class="footer py-4">
+    <footer class="footer my-0 py-4">
         <div class="container">
             <div class="row mb-3">
                 <div class="col-md-6 col-lg-3">
@@ -453,13 +470,17 @@
                     <div class="mb-3">
                         <h2 class="mb-0">Connect With Us</h2>
                         <ul class="px-0 mt-3 d-flex justify-content-start align-items-center flex-row">
-                            <li class="mx-2"><a style="font-size:25px;" href="https://www.facebook.com/KidVisionPreK/"
-                                    class="fa fa-facebook"></a></li>
-                            <li class="mx-2"><a style="font-size:25px;" href="https://www.instagram.com/kidvisionprek/"
-                                    class="fa fa-instagram"></a></li>
-                            <li class="mx-2"><a style="font-size:25px;"
+                            <li class="mx-2"><a style="font-size:25px;" target="_blank"
+                                    href="https://www.facebook.com/KidVisionPreK/" class="fa fa-facebook"></a></li>
+                            <li class="mx-2"><a style="font-size:25px;" target="_blank"
+                                    href="https://www.instagram.com/kidvisionprek/" class="fa fa-instagram"></a></li>
+                            <li class="mx-2"><a style="font-size:25px;" target="_blank"
                                     href="https://www.youtube.com/playlist?list=PLr4S3PqZjXgllhIw77QEjqdAsaAQ6x_gL"
                                     class="fa fa-youtube-play"></a></li>
+                            <li class="mx-2"><a style="font-size:25px;" target="_blank"
+                                    href="https://twitter.com/KidVisionPreK" class="fa fa-twitter"></a></li>
+                            <li class="mx-2"><a style="font-size:25px;" target="_blank"
+                                    href="https://www.pinterest.com/kidvisionprek" class="fa fa-pinterest"></a></li>
                         </ul>
                     </div>
                 </div>
