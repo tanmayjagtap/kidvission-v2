@@ -23,6 +23,15 @@
 .top-navbar a{
     color: black;
 }
+
+
+.modal-backdrop{
+  z-index: 0;
+}
+
+.modal{
+  overflow: hidden;
+}
 .showcase
 {
   position: relative;
