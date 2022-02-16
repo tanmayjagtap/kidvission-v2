@@ -109,6 +109,15 @@
   }
 }
 
+.height-contact{
+  height: 200px;
+}
+
+@media screen and (max-width: 500px) {
+  .height-contact{
+      height: 300px;
+  }
+}
 
 .gradient-bg-association{
     background: linear-gradient(135deg, var(--primary), var(--secondary))

@@ -32,7 +32,7 @@
                 <a class="nav-link" href="#">Click Here to Register</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Forgot User Info?</a>
+                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#forgotPassModal">Forgot User Info?</a>
             </li>
             <li class="nav-item">
                 <button class="btn btn-primary" style="background-color: #fd5f00; outline: none; border: none;"
@@ -177,8 +177,70 @@
                             <input type="password" class="form-control" id="exampleFormControlInput1"
                                 placeholder="Enter Password">
                         </div>
+                        <div class="mb-2">
+                            <a href="" style="text-decoration: none;" data-bs-toggle="modal" data-bs-target="#forgotPassModal">Forgot Password</a> |
+                            <a href="" style="text-decoration: none;" data-bs-toggle="modal" data-bs-target="#forgotNameModal">Forgot Username</a>
+                        </div>
                         <button type="button" class="btn btn-primary">Login</button>
                     </div>
+                </div>
+            </div>
+        </div>
+        <!-- ------------------------------ -->
+        <!-- Modal Forgot Password -->
+        <div class="modal fade modal-vertical" id="forgotPassModal" tabindex="-1" aria-labelledby="forgotPassModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog ">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="forgotPassModalLabel">Forgot User Info?</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <p class="px-2">Enter the Email Address and User Name you registered with and we'll send you instructions on changing your password.</p>
+                    <div class="modal-body">
+                        <div class="mb-1">
+                            <!-- <label for="exampleFormControlInput1" class="form-label">Username</label> -->
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="Enter Username">
+                        </div>
+                        <a class="text-primary ms-1" style="text-decoration: none;" href="" data-bs-toggle="modal" data-bs-target="#forgotNameModal">Forgot Username?</a>
+                        <div class="my-3">
+                            <!-- <label for="exampleFormControlInput1" class="form-label">Password</label> -->
+                            <input type="password" class="form-control" id="exampleFormControlInput1"
+                                placeholder="Enter Email">
+                        </div>
+                        <button type="button" class="btn btn-primary">Go</button>
+                    </div>
+                    <div class="modal-footer">
+                        <p>If you don't remember the Email Address or User Name you registered with, just send us an e-mail at <a href="mailto:info@kidvisionprek.org//">info@kidvisionprek.org</a> and let us know.</p>
+                        <p>Make sure to include your name, state, and county and your current e-mail address. We will respond by e-mail.</p>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <!-- ------------------------------ -->
+        <!-- Modal Forgot Username -->
+        <div class="modal fade modal-vertical" id="forgotNameModal" tabindex="-1" aria-labelledby="forgotNameModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog ">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="forgotNameModalLabel">Forgot Username?</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <p class="px-2">Enter the Email Address you registered with and we'll send you email with your username.</p>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <!-- <label for="exampleFormControlInput1" class="form-label">Username</label> -->
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="Enter Email">
+                        </div>
+                        <button type="button" class="btn btn-primary">Go</button>
+                    </div>
+                    <div class="modal-footer">
+                        <p>If you don't remember the Email Address or User Name you registered with, just send us an e-mail at <a href="mailto:info@kidvisionprek.org//">info@kidvisionprek.org</a> and let us know.</p>
+                        <p>Make sure to include your name, state, and county and your current e-mail address. We will respond by e-mail.</p>
+                      </div>
                 </div>
             </div>
         </div>
