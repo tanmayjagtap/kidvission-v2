@@ -1,0 +1,9 @@
+.individual-field-trip-video{
+    height: 460px;
+}
+
+@media only screen and (max-width: 500px){
+    .individual-field-trip-video{
+        height: auto;
+    }
+}
