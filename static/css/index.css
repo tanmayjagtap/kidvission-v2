@@ -113,8 +113,32 @@
   height: 200px;
 }
 
-.active{
+.active-pre{
+  color: #fd5f00;
   font-weight: bold;
+}
+
+.disabled-pre{
+  color: gray;
+  text-decoration: none;
+}
+
+.disabled-pre:hover{
+  color: gray;
+}
+
+.active-pre:hover{
+  color: #fd5f00;
+}
+
+.completed-pre{
+  font-weight: bold;
+  color: #0d1128;
+}
+
+.completed-pre:hover{
+  font-weight: bold;
+  color: #0d1128;
 }
 
 @media screen and (max-width: 500px) {
