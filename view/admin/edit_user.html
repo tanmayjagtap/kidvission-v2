@@ -156,11 +156,11 @@
                             <label for="inputEmail3" class="col-sm-5 col-form-label"><span class="text-danger">*</span>
                                 Prefix: </label>
                             <div class="col-sm-6">
-                                <select class="form-select" aria-label="Default select example">
-                                    <option selected>Mr..</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
+                                <select class="form-select" id="prefix" aria-label="Default select example">
+                                    <option value="Dr">----Dr----</option>
+                                    <option value="Mr">----Mr----</option>
+                                    <option value="Mrs">----Mrs----</option>
+                                    <option value="Ms">----Ms----</option>
                                 </select>
                             </div>
                         </div>
@@ -168,27 +168,27 @@
                             <label for="inputEmail3" class="col-sm-5 col-form-label"><span class="text-danger">*</span>
                                 First Name: </label>
                             <div class="col-sm-6">
-                                <input type="text" class="form-control" id="inputEmail3">
+                                <input id="firstName" type="text" class="form-control">
                             </div>
                         </div>
                         <div class="row mb-3">
                             <label for="inputEmail3" class="col-sm-5 col-form-label  ">Middle Name:</label>
                             <div class="col-sm-6">
-                                <input type="text" class="form-control" id="inputEmail3">
+                                <input id="middleName" type="text" class="form-control">
                             </div>
                         </div>
                         <div class="row mb-3">
                             <label for="inputEmail3" class="col-sm-5 col-form-label"><span class="text-danger">*</span>
                                 Last Name: </label>
                             <div class="col-sm-6">
-                                <input type="text" class="form-control" id="inputEmail3">
+                                <input id="lastName" type="text" class="form-control">
                             </div>
                         </div>
                         <div class="row mb-3">
                             <label for="inputEmail3" class="col-sm-5 col-form-label"><span class="text-danger">*</span>
                                 Email:</label>
                             <div class="col-sm-6">
-                                <input type="text" class="form-control" id="inputEmail3">
+                                <input id="email" type="text" class="form-control">
                             </div>
                         </div>
 
@@ -198,28 +198,29 @@
                         <div class="row mb-3">
                             <label for="inputEmail3" class="col-sm-5 col-form-label  ">Username:</label>
                             <div class="col-sm-6">
-                                <input type="text" class="form-control" id="inputEmail3">
+                                <input type="text" id="userName" class="form-control">
                             </div>
                         </div>
 
                         <div class="row mb-3">
-                            <label for="inputEmail3" class="col-sm-5 col-form-label  ">Password:</label>
+                            <label for="inputEmail3" class="col-sm-5 col-form-label ">Password:</label>
                             <div class="col-sm-6">
-                                <input type="text" class="form-control" id="inputEmail3">
+                                <input type="text" class="form-control" id="password">
                             </div>
                         </div>
 
                         <div class="row mb-3">
-                            <label for="inputEmail3" class="col-sm-5 col-form-label  ">Are you a teacher?</label>
+                            <label id="registrationtypeTD" for="inputEmail3" class="col-sm-5 col-form-label  ">Are you a
+                                teacher?</label>
                             <div class="col-sm-6">
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                        id="inlineRadio1" value="yes">
+                                        id="registrationtypeYes" value="yes">
                                     <label class="form-check-label" for="inlineRadio1">Yes</label>
                                 </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                        id="inlineRadio2" value="no">
+                                        id="registrationtypeIdNo" value="no">
                                     <label class="form-check-label" for="inlineRadio2">No</label>
                                 </div>
                             </div>
@@ -228,28 +229,28 @@
                         <div class="row mb-3">
                             <label for="inputEmail3" class="col-sm-5 col-form-label  ">Phone:</label>
                             <div class="col-sm-6">
-                                <input type="text" class="form-control" id="inputEmail3">
+                                <input id="aphone" type="text" class="form-control">
                             </div>
                         </div>
 
                         <div class="row mb-3">
                             <label for="inputEmail3" class="col-sm-5 col-form-label  ">Address:</label>
                             <div class="col-sm-6">
-                                <input type="text" class="form-control" id="inputEmail3">
+                                <input id="streetAddress" type="text" class="form-control">
                             </div>
                         </div>
 
                         <div class="row mb-3">
                             <label for="inputEmail3" class="col-sm-5 col-form-label  ">Zip:</label>
                             <div class="col-sm-6">
-                                <input type="text" class="form-control" id="inputEmail3">
+                                <input id="zipCode" type="text" class="form-control">
                             </div>
                         </div>
 
                         <div class="row mb-3">
                             <label for="inputEmail3" class="col-sm-5 col-form-label  ">City:</label>
                             <div class="col-sm-6">
-                                <input type="text" class="form-control" id="inputEmail3">
+                                <input id="city" type="text" class="form-control">
                             </div>
                         </div>
 
@@ -258,7 +259,7 @@
                         <div class="row mb-3">
                             <label for="inputEmail3" class="col-sm-5 col-form-label  ">County:</label>
                             <div class="col-sm-6">
-                                <input type="text" class="form-control" id="inputEmail3">
+                                <input type="text" id="county" class="form-control">
                             </div>
                         </div>
 
@@ -266,7 +267,7 @@
                         <div class="row mb-3">
                             <label for="inputEmail3" class="col-sm-5 col-form-label  ">State:</label>
                             <div class="col-sm-6">
-                                <select class="form-select" aria-label="Default select example">
+                                <select id="state" class="form-select" aria-label="Default select example">
                                     <option selected>New York</option>
                                     <option value="1">One</option>
                                     <option value="2">Two</option>
@@ -291,75 +292,83 @@
 
 
                         <div class="row mb-3">
-                            <label for="inputEmail3" class="col-sm-5 col-form-label  ">Occupation:</label>
-                            <div class="col-sm-6">
+                            <label for="inputEmail3" class="col-sm-5 col-form-label id=" occupationalTitleId" ">Occupation:</label>
+                            <div class=" col-sm-6">
                                 <select class="form-select" aria-label="Default select example">
                                     <option selected>Mr..</option>
                                     <option value="1">One</option>
                                     <option value="2">Two</option>
                                     <option value="3">Three</option>
                                 </select>
-                            </div>
                         </div>
-
-
-                        <div class="row mb-3">
-                            <label for="inputEmail3" class="col-sm-5 col-form-label  ">Other Occupational
-                                Title:</label>
-                            <div class="col-sm-6">
-                                <input type="text" class="form-control" id="inputEmail3">
-                            </div>
-                        </div>
-
-
-                        <div class="row mb-3">
-                            <label for="inputEmail3" class="col-sm-5 col-form-label  ">School Name:</label>
-                            <div class="col-sm-6">
-                                <input type="text" class="form-control" id="inputEmail3">
-                            </div>
-                        </div>
-                        <button type="submit" class="btn text-white" style="background-color: #fd5f00;">Save
-                            Changes</button>
-                        <button type="submit" class="btn text-white" style="background-color: #fd5f00;">Cancel</button>
-                        <button type="submit" class="btn text-white" style="background-color: #fd5f00;">Delete this
-                            user</button>
-
-
-                    </form>
-                    <h4 style="background: #0d1128;" class="text-white py-3 px-2 rounded mt-3">Change Username</h4>
-
-                    <form action="" class="mt-3">
-
-                        <div class="row mb-3">
-                            <label for="inputEmail3" class="col-sm-5 col-form-label  ">New Username:</label>
-                            <div class="col-sm-6">
-                                <input type="text" class="form-control" id="inputEmail3">
-                            </div>
-                        </div>
-                        <button type="submit" class="btn text-white" style="background-color: #fd5f00;">Change
-                            Username</button>
-
-                    </form>
-
-                    <h4 style="background: #0d1128;" class="text-white py-3 px-2 rounded mt-3">Change Password</h4>
-
-                    <form action="" class="mt-3">
-
-                        <div class="row mb-3">
-                            <label for="inputEmail3" class="col-sm-5 col-form-label  ">New Password:</label>
-                            <div class="col-sm-6">
-                                <input type="text" class="form-control" id="inputEmail3">
-                            </div>
-                        </div>
-                        <button type="submit" class="btn text-white" style="background-color: #fd5f00;">Change
-                            Password</button>
-
-                    </form>
-
-
                 </div>
-            </main>
+
+
+                <div class="row mb-3">
+                    <label for="inputEmail3" class="col-sm-5 col-form-label  ">Other Occupational
+                        Title:</label>
+                    <div class="col-sm-6">
+                        <input type="text" id="otherOccupationalTitle" class="form-control">
+                    </div>
+                </div>
+
+
+                <div class="row mb-3">
+                    <label for="inputEmail3" class="col-sm-5 col-form-label  ">School Name:</label>
+                    <div class="col-sm-6">
+                        <input type="text" id="schoolName" class="form-control">
+                    </div>
+                </div>
+
+                <div class="form-check">
+                    <input id="emailNotification"  class="form-check-input col-sm-5 col-form-label" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label col-sm-6" for="flexCheckChecked">
+                        Yes, I would like to receive updates about KidVision VPK via E-mail.
+                    </label>
+                </div>
+
+                <button type="submit" class="btn text-white" style="background-color: #fd5f00;">Save
+                    Changes</button>
+                <button type="submit" class="btn text-white" style="background-color: #fd5f00;">Cancel</button>
+                <button type="submit" class="btn text-white" style="background-color: #fd5f00;">Delete this
+                    user</button>
+
+
+                </form>
+                <h4 style="background: #0d1128;" class="text-white py-3 px-2 rounded mt-3">Change Username</h4>
+
+                <form action="" class="mt-3">
+
+                    <div class="row mb-3">
+                        <label for="inputEmail3" class="col-sm-5 col-form-label  ">New Username:</label>
+                        <div class="col-sm-6">
+                            <input id="newusername" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn text-white" style="background-color: #fd5f00;">Change
+                        Username</button>
+
+                </form>
+
+                <h4 style="background: #0d1128;" class="text-white py-3 px-2 rounded mt-3">Change Password</h4>
+
+                <form action="" class="mt-3">
+
+                    <div class="row mb-3">
+                        <label for="inputEmail3" class="col-sm-5 col-form-label  ">New Password:</label>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" id="changeusername">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn text-white" style="background-color: #fd5f00;">Change
+                        Password</button>
+
+                </form>
+
+
         </div>
+        </ in>
+    </div>
     </div>
 
 
