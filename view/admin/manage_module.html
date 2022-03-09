@@ -149,46 +149,46 @@
                 <div class="border px-2 py-2 shadow-lg border-round">
                     <h4 style="background: #0d1128;" class="text-white py-3 px-2 rounded">Module Manager(English)</h4>
                     <div class="d-flex justify-content-end">
-                        <button class="btn btn-primary">Add Spanish Version</button>
+                        <button id="add_spanish" class="btn btn-primary">Add Spanish Version</button>
                     </div>
                     <form class="mt-3">
                         <div class="row mb-3">
                             <label for="inputEmail3" class="col-sm-5 col-form-label">Title:</label>
                             <div class="col-sm-6">
-                                <input type="text" class="form-control" id="inputEmail3">
+                                <input type="text" class="form-control" id="title">
                             </div>
                         </div>
                         <div class="row mb-3">
                             <label for="inputEmail3" class="col-sm-5 col-form-label">Short Description:</label>
                             <div class="col-sm-6">
-                                <input type="text" class="form-control" id="inputEmail3">
+                                <input type="text" class="form-control" id="shortDescription">
                             </div>
                         </div>
                         <div class="row mb-3">
                             <label for="inputEmail3" class="col-sm-5 col-form-label">Long Description:</label>
                             <div class="col-sm-6">
-                                <input type="text" class="form-control" id="inputEmail3">
+                                <input type="text" class="form-control" id="longDescription">
                             </div>
                         </div>
                         <div class="row mb-3">
                             <label for="inputEmail3" class="col-sm-5 col-form-label">Preview Thumbnail<br /> (JPG, 300px
                                 wide by 189px tall):</label>
                             <div class="col-sm-6">
-                                <input type="file" class="form-control" id="inputEmail3">
+                                <input type="file" class="form-control" id="imageFile">
                             </div>
                         </div>
                         <div class="row mb-3">
                             <label for="inputEmail3" class="col-sm-5 col-form-label">Classroom Icon<br /> (Transparent
                                 PNG, 100px wide by 73px tall):</label>
                             <div class="col-sm-6">
-                                <input type="file" class="form-control" id="inputEmail3">
+                                <input type="file" class="form-control" id="iconFile">
                             </div>
                         </div>
                         <div class="row mb-3">
                             <label for="inputEmail3" class="col-sm-5 col-form-label">Featured<br /> (Check to set as
                                 featured field trip):</label>
                             <div class="col-sm-6">
-                                <input type="text" class="form-control" id="inputEmail3">
+                                <input type="text" class="form-control" id="featuredFieldTrip">
                             </div>
                         </div>
                         <div class="row mb-3">
@@ -196,20 +196,20 @@
                             <div class="col-sm-6">
                                 <div class="btn-group" role="group" aria-label="Basic example">
                                     <button type="button" class="btn btn-primary me-2"
-                                        style="background-color: #fd5f00; border:none">Save</button>
+                                        style="background-color: #fd5f00; border:none" id="update">Save</button>
                                     <button type="button" class="btn btn-primary me-2"
-                                        style="background-color: #fd5f00; border:none">Cancel</button>
+                                        style="background-color: #fd5f00; border:none" id="cancel">Cancel</button>
                                     <button type="button" class="btn btn-primary me-2"
-                                        style="background-color: #fd5f00; border:none">Unpublish</button>
+                                        style="background-color: #fd5f00; border:none" id="publish">Unpublish</button>
                                     <button type="button" class="btn btn-primary me-2"
-                                        style="background-color: #fd5f00; border:none">Preview</button>
+                                        style="background-color: #fd5f00; border:none" id="previewModule">Preview</button>
                                 </div>
                             </div>
                         </div>
 
                     </form>
                     <hr />
-                    <div class="btn-group" role="group" aria-label="Basic example">
+                    <div class="btn-group" role="group" aria-label="Basic example" id="wrapper" >
                         <button type="button" class="btn btn-primary" style=" border:none">Video</button>
                         <button type="button" class="btn btn-light" style=" border:none">PDFs</button>
                         <button type="button" class="btn btn-light" style=" border:none">Standards</button>
@@ -227,11 +227,7 @@
                                     <label for="inputEmail3" class="col-sm-2 col-form-label">Preview:</label>
                                     <div class="col-sm-4">
                                         <select class="form-select" aria-label="Default select example">
-                                            <option selected>Open this select menu</option>
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                        </select>
+                                            <option selected id="previews">Open this select menu</option></select>
                                     </div>
                                     <p class="col-sm-2">or upload new preview</p>
                                     <div class="col-sm-4">
@@ -241,12 +237,12 @@
                                 <div class="row mb-3">
                                     <label for="inputEmail3" class="col-sm-2 col-form-label"></label>
                                     <div class="col-sm-4">
-                                        <button type="submit" class="btn text-white" style="background-color: #fd5f00;">
+                                        <button id="updatePreviewVideo" type="submit" class="btn text-white" style="background-color: #fd5f00;">
                                             Update Preview Video</button>
                                     </div>
                                     <p class="col-sm-2"></p>
                                     <div class="col-sm-4">
-                                        <button type="submit" class="btn text-white" style="background-color: #fd5f00;">
+                                        <button type="submit" id="uploadPreviewVideo" class="btn text-white" style="background-color: #fd5f00;">
                                             Upload Preview Video</button>
                                     </div>
                                 </div>
@@ -254,26 +250,23 @@
                                     <label for="inputEmail3" class="col-sm-2 col-form-label">Field Trip:</label>
                                     <div class="col-sm-4">
                                         <select class="form-select" aria-label="Default select example">
-                                            <option selected>Open this select menu</option>
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
+                                            <option id="videos">Open this select menu</option>
                                         </select>
                                     </div>
                                     <p class="col-sm-2">or upload new video</p>
                                     <div class="col-sm-4">
-                                        <input type="text" class="form-control" id="inputEmail3">
+                                        <input id="videoFile" type="text" class="form-control" id="inputEmail3">
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <label for="inputEmail3" class="col-sm-2 col-form-label"></label>
                                     <div class="col-sm-4">
-                                        <button type="submit" class="btn text-white" style="background-color: #fd5f00;">
+                                        <button type="submit" id="updateVideo" class="btn text-white" style="background-color: #fd5f00;">
                                             Update Video</button>
                                     </div>
                                     <p class="col-sm-2"></p>
                                     <div class="col-sm-4">
-                                        <button type="submit" class="btn text-white" style="background-color: #fd5f00;">
+                                        <button type="submit" id="uploadVideo" class="btn text-white" style="background-color: #fd5f00;">
                                             Upload Video</button>
                                     </div>
                                 </div>
@@ -290,41 +283,41 @@
                                     <label for="inputEmail3" class="col-sm-5 col-form-label">VPK Playlist Stream
                                         Id:</label>
                                     <div class="col-sm-6">
-                                        <input type="text" class="form-control" id="inputEmail3">
+                                        <input id="vpkPlaylistStreamId" type="text" class="form-control" id="inputEmail3">
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <label for="inputEmail3" class="col-sm-5 col-form-label">Standard Video URL:</label>
                                     <div class="col-sm-6">
-                                        <input type="text" class="form-control" id="inputEmail3">
+                                        <input id="vpkStandardVideoStreamingURL" type="text" class="form-control" id="inputEmail3">
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <label for="inputEmail3" class="col-sm-5 col-form-label">New Words Video
                                         URL:</label>
                                     <div class="col-sm-6">
-                                        <input type="text" class="form-control" id="inputEmail3">
+                                        <input type="text" class="form-control" id="vpkNewWordVideoStreamingURL">
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <label for="inputEmail3" class="col-sm-5 col-form-label">VPK 360 Video Stream
                                         Id:</label>
                                     <div class="col-sm-6">
-                                        <input type="text" class="form-control" id="inputEmail3">
+                                        <input type="text" class="form-control" id="vpkNewThreeSixtyVideoStreamingURL" >
                                     </div>
                                 </div>
                                 <div class="row mb-3">
-                                    <label for="inputEmail3" class="col-sm-5 col-form-label">Community Helpers Video
+                                    <label for="inputEmail3" class="col-sm-5 col-form-label" >Community Helpers Video
                                         Stream
                                         Id:</label>
                                     <div class="col-sm-6">
-                                        <input type="text" class="form-control" id="inputEmail3">
+                                        <input type="text" class="form-control" id="vpkCommunityHelpersVideoStreamingURL">
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <label for="inputEmail3" class="col-sm-5 col-form-label"> </label>
                                     <div class="col-sm-6">
-                                        <button type="submit" class="btn text-white"
+                                        <button type="submit" id="saveVPKVideos" class="btn text-white"
                                             style="background-color: #fd5f00;">Save
                                             VPK PLaylist Videos</button>
                                     </div>
@@ -343,27 +336,27 @@
                                     <label for="inputEmail3" class="col-sm-5 col-form-label">PDF lesson
                                         plan<br />(English):</label>
                                     <div class="col-sm-6">
-                                        <input type="file" class="form-control" id="inputEmail3">
+                                        <input type="file" class="form-control" id="fourYearLessonPlan>
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <label for="inputEmail3" class="col-sm-5 col-form-label">Student Assessment
                                         Form<br />(English):</label>
                                     <div class="col-sm-6">
-                                        <input type="file" class="form-control" id="inputEmail3">
+                                        <input type="file" class="form-control" id="fourYearAssessment">
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <label for="inputEmail3" class="col-sm-5 col-form-label">Coloring
                                         Worksheets<br />(English):</label>
                                     <div class="col-sm-6">
-                                        <input type="file" class="form-control" id="inputEmail3">
+                                        <input type="file" class="form-control" id="fourYearWorksheet">
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <label for="inputEmail3" class="col-sm-5 col-form-label"></label>
                                     <div class="col-sm-6">
-                                        <button type="submit" class="btn text-white"
+                                        <button type="submit" id="saveFourYearPdfs" class="btn text-white"
                                             style="background-color: #fd5f00;">Save
                                             4 Year PDFs</button>
                                     </div>
@@ -378,27 +371,27 @@
                                     <label for="inputEmail3" class="col-sm-5 col-form-label">PDF lesson
                                         plan<br />(English):</label>
                                     <div class="col-sm-6">
-                                        <input type="file" class="form-control" id="inputEmail3">
+                                        <input type="file" class="form-control" id="threeYearLessonPlan>
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <label for="inputEmail3" class="col-sm-5 col-form-label">Student Assessment
                                         Form<br />(English):</label>
                                     <div class="col-sm-6">
-                                        <input type="file" class="form-control" id="inputEmail3">
+                                        <input type="file" class="form-control" id="threeYearassessment">
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <label for="inputEmail3" class="col-sm-5 col-form-label">Coloring
                                         Worksheets<br />(English):</label>
                                     <div class="col-sm-6">
-                                        <input type="file" class="form-control" id="inputEmail3">
+                                        <input type="file" class="form-control" id="threeYearWorksheet">
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <label for="inputEmail3" class="col-sm-5 col-form-label"></label>
                                     <div class="col-sm-6">
-                                        <button type="submit" class="btn text-white"
+                                        <button type="submit" class="btn text-white" id="saveThreeYearPdfs"
                                             style="background-color: #fd5f00;">Save
                                             3 Year PDFs</button>
                                     </div>
@@ -413,27 +406,27 @@
                                     <label for="inputEmail3" class="col-sm-5 col-form-label">PDF lesson
                                         plan<br />(English):</label>
                                     <div class="col-sm-6">
-                                        <input type="file" class="form-control" id="inputEmail3">
+                                        <input type="file" class="form-control" id="twoYearLessonPlan">
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <label for="inputEmail3" class="col-sm-5 col-form-label">Student Assessment
                                         Form<br />(English):</label>
                                     <div class="col-sm-6">
-                                        <input type="file" class="form-control" id="inputEmail3">
+                                        <input type="file" class="form-control" id="twoYearassessment">
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <label for="inputEmail3" class="col-sm-5 col-form-label">Coloring
                                         Worksheets<br />(English):</label>
                                     <div class="col-sm-6">
-                                        <input type="file" class="form-control" id="inputEmail3">
+                                        <input type="file" class="form-control" id="twoYearWorksheet">
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <label for="inputEmail3" class="col-sm-5 col-form-label"></label>
                                     <div class="col-sm-6">
-                                        <button type="submit" class="btn text-white"
+                                        <button type="submit" class="btn text-white" id="saveTwoYearPdfs"
                                             style="background-color: #fd5f00;">Save
                                             2 Year PDFs</button>
                                     </div>
@@ -449,27 +442,27 @@
                                     <label for="inputEmail3" class="col-sm-5 col-form-label">PDF lesson
                                         plan<br />(English):</label>
                                     <div class="col-sm-6">
-                                        <input type="file" class="form-control" id="inputEmail3">
+                                        <input type="file" class="form-control" id="oneYearLessonPlan">
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <label for="inputEmail3" class="col-sm-5 col-form-label">Student Assessment
                                         Form<br />(English):</label>
                                     <div class="col-sm-6">
-                                        <input type="file" class="form-control" id="inputEmail3">
+                                        <input type="file" class="form-control" id="oneYearassessment">
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <label for="inputEmail3" class="col-sm-5 col-form-label">Coloring
                                         Worksheets<br />(English):</label>
                                     <div class="col-sm-6">
-                                        <input type="file" class="form-control" id="inputEmail3">
+                                        <input type="file" class="form-control" id="oneYearWorksheet">
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <label for="inputEmail3" class="col-sm-5 col-form-label"></label>
                                     <div class="col-sm-6">
-                                        <button type="submit" class="btn text-white"
+                                        <button type="submit" class="btn text-white" id="saveOneYearPdfs"
                                             style="background-color: #fd5f00;">Save
                                             1 Year PDFs</button>
                                     </div>
@@ -486,27 +479,27 @@
                                     <label for="inputEmail3" class="col-sm-5 col-form-label">PDF lesson
                                         plan<br />(English):</label>
                                     <div class="col-sm-6">
-                                        <input type="file" class="form-control" id="inputEmail3">
+                                        <input type="file" class="form-control" id="fourYearSpanishLessonPlan">
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <label for="inputEmail3" class="col-sm-5 col-form-label">Student Assessment
                                         Form<br />(English):</label>
                                     <div class="col-sm-6">
-                                        <input type="file" class="form-control" id="inputEmail3">
+                                        <input type="file" class="form-control" id="fourYearSpanishAssessment">
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <label for="inputEmail3" class="col-sm-5 col-form-label">Coloring
                                         Worksheets<br />(English):</label>
                                     <div class="col-sm-6">
-                                        <input type="file" class="form-control" id="inputEmail3">
+                                        <input type="file" class="form-control" id="fourYearSpanishWorksheet">
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <label for="inputEmail3" class="col-sm-5 col-form-label"></label>
                                     <div class="col-sm-6">
-                                        <button type="submit" class="btn text-white"
+                                        <button type="submit" class="btn text-white" id="saveFourYearSpanishPdfs"
                                             style="background-color: #fd5f00;">Save
                                             4 Year PDFs</button>
                                     </div>
@@ -521,27 +514,27 @@
                                     <label for="inputEmail3" class="col-sm-5 col-form-label">PDF lesson
                                         plan<br />(English):</label>
                                     <div class="col-sm-6">
-                                        <input type="file" class="form-control" id="inputEmail3">
+                                        <input type="file" class="form-control" id="threeYearSpanishLessonPlan">
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <label for="inputEmail3" class="col-sm-5 col-form-label">Student Assessment
                                         Form<br />(English):</label>
                                     <div class="col-sm-6">
-                                        <input type="file" class="form-control" id="inputEmail3">
+                                        <input type="file" class="form-control" id="threeYearSpanishassessment">
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <label for="inputEmail3" class="col-sm-5 col-form-label">Coloring
                                         Worksheets<br />(English):</label>
                                     <div class="col-sm-6">
-                                        <input type="file" class="form-control" id="inputEmail3">
+                                        <input type="file" class="form-control" id="threeYearSpanishWorksheet">
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <label for="inputEmail3" class="col-sm-5 col-form-label"></label>
                                     <div class="col-sm-6">
-                                        <button type="submit" class="btn text-white"
+                                        <button type="submit" class="btn text-white" id="saveThreeYearSpanishPdfs"
                                             style="background-color: #fd5f00;">Save
                                             3 Year PDFs</button>
                                     </div>
@@ -556,27 +549,27 @@
                                     <label for="inputEmail3" class="col-sm-5 col-form-label">PDF lesson
                                         plan<br />(English):</label>
                                     <div class="col-sm-6">
-                                        <input type="file" class="form-control" id="inputEmail3">
+                                        <input type="file" class="form-control" id="twoYearSpanishLessonPlan">
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <label for="inputEmail3" class="col-sm-5 col-form-label">Student Assessment
                                         Form<br />(English):</label>
                                     <div class="col-sm-6">
-                                        <input type="file" class="form-control" id="inputEmail3">
+                                        <input type="file" class="form-control" id="twoYearSpanishAssessment">
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <label for="inputEmail3" class="col-sm-5 col-form-label">Coloring
                                         Worksheets<br />(English):</label>
                                     <div class="col-sm-6">
-                                        <input type="file" class="form-control" id="inputEmail3">
+                                        <input type="file" class="form-control" id="twoYearSpanishWorksheet">
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <label for="inputEmail3" class="col-sm-5 col-form-label"></label>
                                     <div class="col-sm-6">
-                                        <button type="submit" class="btn text-white"
+                                        <button type="submit" class="btn text-white" id="saveTwoYearSpanishPdfs"
                                             style="background-color: #fd5f00;">Save
                                             2 Year PDFs</button>
                                     </div>
@@ -592,27 +585,27 @@
                                     <label for="inputEmail3" class="col-sm-5 col-form-label">PDF lesson
                                         plan<br />(English):</label>
                                     <div class="col-sm-6">
-                                        <input type="file" class="form-control" id="inputEmail3">
+                                        <input type="file" class="form-control" id="oneYearSpanishLessonPlan">
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <label for="inputEmail3" class="col-sm-5 col-form-label">Student Assessment
                                         Form<br />(English):</label>
                                     <div class="col-sm-6">
-                                        <input type="file" class="form-control" id="inputEmail3">
+                                        <input type="file" class="form-control" id="oneYearSpanishAssessment">
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <label for="inputEmail3" class="col-sm-5 col-form-label">Coloring
                                         Worksheets<br />(English):</label>
                                     <div class="col-sm-6">
-                                        <input type="file" class="form-control" id="inputEmail3">
+                                        <input type="file" class="form-control" id="oneYearSpanishWorksheet">
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <label for="inputEmail3" class="col-sm-5 col-form-label"></label>
                                     <div class="col-sm-6">
-                                        <button type="submit" class="btn text-white"
+                                        <button type="submit" class="btn text-white" id="saveOneYearSpanishPdfs"
                                             style="background-color: #fd5f00;">Save
                                             1 Year PDFs</button>
                                     </div>
@@ -628,27 +621,27 @@
                             <div class="row mb-3">
                                 <label for="inputEmail3" class="col-sm-5 col-form-label">Standard 1:</label>
                                 <div class="col-sm-6">
-                                    <input type="text" class="form-control" id="inputEmail3">
+                                    <input type="text" class="form-control" id="standard0">
                                 </div>
                             </div>
                             <div class="row mb-3">
                                 <label for="inputEmail3" class="col-sm-5 col-form-label">Standard 2:</label>
                                 <div class="col-sm-6">
-                                    <input type="text" class="form-control" id="inputEmail3">
+                                    <input type="text" class="form-control" id="standard1">
                                 </div>
                             </div>
                             <div class="row mb-3">
                                 <label for="inputEmail3" class="col-sm-5 col-form-label">Standard 3:</label>
                                 <div class="col-sm-6">
-                                    <input type="text" class="form-control" id="inputEmail3">
+                                    <input type="text" class="form-control" id="standard2">
                                 </div>
                             </div>
                             <div class="row mb-3">
                                 <label for="inputEmail3" class="col-sm-5 col-form-label">Standard 4:</label>
                                 <div class="col-sm-6">
-                                    <input type="text" class="form-control" id="inputEmail3">
+                                    <input type="text" class="form-control" id="standard3">
                                 </div>
-                            </div><button type="submit" class="btn text-white"
+                            </div><button type="submit" id="updateStandards" class="btn text-white"
                                 style="background-color: #fd5f00;">Save</button>
                         </form>
                     </div>
@@ -815,25 +808,25 @@
                             <div class="row mb-3">
                                 <label for="inputEmail3" class="col-sm-5 col-form-label">Title:</label>
                                 <div class="col-sm-6">
-                                    <input type="text" class="form-control" id="inputEmail3">
+                                    <input type="text" class="form-control" id="resource_title">
                                 </div>
                             </div>
                             <div class="row mb-3">
                                 <label for="inputEmail3" class="col-sm-5 col-form-label">Short Description:</label>
                                 <div class="col-sm-6">
-                                    <input type="text" class="form-control" id="inputEmail3">
+                                    <input type="text" class="form-control" id="resource_short_description">
                                 </div>
                             </div>
                             <div class="row mb-3">
                                 <label for="inputEmail3" class="col-sm-5 col-form-label">Link:</label>
                                 <div class="col-sm-6">
-                                    <input type="text" class="form-control" id="inputEmail3">
+                                    <input type="text" class="form-control" id="resource_url>
                                 </div>
                             </div>
                             <div class="row mb-3">
                                 <label for="inputEmail3" class="col-sm-5 col-form-label">Icon:</label>
                                 <div class="col-sm-6">
-                                    <input type="file" class="form-control" id="inputEmail3">
+                                    <input type="file" class="form-control" id="resource_image>
                                 </div>
                             </div>
                             <div class="row mb-3">
